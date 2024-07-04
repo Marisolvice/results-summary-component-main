@@ -6,19 +6,24 @@
 
 body {
   background-color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sans-serif;
 }
 .tarjeta-resultado__principal {
   justify-content: center;
   align-items: center;
   display: flex;
-  min-height: 100vh;
+  min-height: 111vh;
 }
 .tarjeta-resultado {
-  background-color: var(--color-tarjeta-resultado);
+  background: rgb(102, 69, 250);
+  background: linear-gradient(
+    218deg,
+    rgba(102, 69, 250, 1) 0%,
+    rgba(104, 67, 251, 1) 50%,
+    rgba(53, 47, 235, 1) 100%
+  );
   border-radius: 30px;
-  width: 367px;
+  width: 368px;
   height: 512px;
   text-align: center;
 }
@@ -30,21 +35,27 @@ body {
 }
 .tarjeta-resultado__circulo {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: #4926d0;
-  margin-left: 28%;
-  margin-top: 20px;
+  width: 180px;
+  height: 180px;
+  background: rgb(75, 35, 205);
+  background: linear-gradient(
+    0deg,
+    rgba(75, 36, 205) 0%,
+    rgba(69, 51, 237) 100%
+  );
+
+  margin-left: 89px;
   color: white;
+  padding: 7px;
 }
 .tarjeta-resultado__numerototal {
-  font-size: 50px;
-  padding: 26px;
+  font-size: 80px;
   font-weight: bold;
+  margin-top: 32px;
 }
 .tarjeta-resultado__de100 {
   font-size: 16px;
-  margin-top: -73px;
+  margin-top: -81px;
 }
 
 .tarjeta-resultado__result {
@@ -54,20 +65,23 @@ body {
 }
 
 .tarjeta-resultado__description {
-  font-size: 18px;
+  font-size: 19px;
   color: white;
+  padding: 0 45px;
 }
 .tarjeta-resumen {
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  height: 512px;
   background-color: var(--color-tarjeta-resumen);
   border-radius: 30px;
   box-shadow: 10px 10px 5px var(--color-sombreado);
-  width: 367px;
-  height: 512px;
 }
 
 .tarjeta-resumen__title-summary {
-  margin-top: 34px;
-  margin-left: 60px;
+  margin-top: 38px;
+  margin-left: 48px;
   font-size: 26px;
   color: #32384a;
   font-weight: bold;
@@ -77,45 +91,62 @@ body {
 .tarjeta-resumen__reaction {
   background-color: #fff6f5;
   color: #df6066;
-  width: 255px;
-  height: 48px;
+  width: 288px;
+  height: 56px;
   border-radius: 8px;
-  margin-left: 58px;
+  margin-left: 41px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-content: center;
 }
 
 .tarjeta-resumen__memory {
   background-color: #fffbf2;
   color: #ffc24d;
-  width: 255px;
-  height: 48px;
+  width: 288px;
+  height: 56px;
   border-radius: 8px;
-  margin-left: 58px;
+  margin-left: 41px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  align-content: center;
+}
+.tarjeta-resumen__memory-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 121px;
+  margin-top: 214px;
+  position: absolute;
 }
 
 .tarjeta-resumen__verbal {
   background-color: #f2fbfa;
   color: #2dac8a;
-  width: 255px;
-  height: 48px;
+  width: 288px;
+  height: 56px;
   border-radius: 8px;
-  margin-left: 58px;
+  margin-left: 41px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-content: center;
 }
 
 .tarjeta-resumen__visual {
   background-color: #f3f3fd;
   color: #1923a0;
-  width: 255px;
-  height: 48px;
+  width: 288px;
+  height: 56px;
   border-radius: 8px;
-  margin-left: 58px;
+  margin-left: 41px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-content: center;
 }
 
 .tarjeta-resumen__button {
@@ -127,7 +158,8 @@ body {
   width: 254px;
   height: 50px;
   margin-left: 58px;
-  margin-top: 64px;
+  margin-top: 12px;
   text-align: center;
   font-size: 21px;
+  justify-content: center;
 }

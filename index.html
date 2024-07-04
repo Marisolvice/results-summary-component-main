@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <section class="tarjeta-resultado__principal">
       <div class="tarjeta-resultado">
-        <p class="tarjeta-resultado__title">Your Result</p>
+        <h2 class="tarjeta-resultado__title">Your Result</h2>
         <div class="tarjeta-resultado__circulo">
           <p class="tarjeta-resultado__numerototal">76</p>
           <p class="tarjeta-resultado__de100">of 100</p>
@@ -21,14 +25,17 @@
       </div>
 
       <div class="tarjeta-resumen">
-        <p class="tarjeta-resumen__title-summary">Summary</p>
-        <p class="tarjeta-resumen__reaction">Reaction</p>
+        <h2 class="tarjeta-resumen__title-summary">Summary</h2>
+        <p <i class="bi bi-lightning-charge tarjeta-resumen__reaction"></i>  Reaction</p>
+          <img class="tarjeta-resumen__memory-icon" src="E:\frontend\results-summary-component-main\assets\images\memoria.png" alt="memory">
         <p class="tarjeta-resumen__memory">Memory</p>
-        <p class="tarjeta-resumen__verbal">Verbal</p>
-        <p class="tarjeta-resumen__visual">Visual</p>
+        <p <i class="bi bi-chat-dots tarjeta-resumen__verbal"></i>  Verbal</p>
+        <p <i class="bi bi-eye tarjeta-resumen__visual"></i>  Visual</p>
 
-        <a class="tarjeta-resumen__button" href="#">Continue</a>
+        <a class="tarjeta-resumen__button">Continue</a>
       </div>
     </section>
   </body>
 </html>
+
+
