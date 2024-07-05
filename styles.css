@@ -8,13 +8,23 @@
 body {
   background-color: white;
   font-family: sans-serif;
+  margin: 0;
 }
+
+.cuerpo-principal {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .tarjeta-resultado__principal {
   justify-content: center;
   align-items: center;
   display: flex;
   max-width: 736px;
   box-shadow: 10px 10px 5px var(--color-sombreado);
+  border-radius: 30px;
 }
 .tarjeta-resultado {
   background: rgb(102, 69, 250);
@@ -27,6 +37,7 @@ body {
   border-radius: 30px;
   text-align: center;
   flex: 1 1 50%;
+  padding-bottom: 48px;
 }
 
 .tarjeta-resultado__title {
@@ -73,10 +84,9 @@ body {
 .tarjeta-resumen {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-tarjeta-resumen);
-  border-radius: 30px;
   align-items: center;
   flex: 1 1 50%;
+  padding-bottom: 48px;
 }
 
 .tarjeta-resumen__title-summary {
@@ -87,7 +97,7 @@ body {
   margin-bottom: 36px;
 }
 
-.tarjeta-resumen-reaction {
+.tarjeta-resumen__dato {
   background-color: #fff6f5;
   color: #df6066;
   width: 249px;
@@ -98,50 +108,23 @@ body {
   font-weight: bold;
   align-content: center;
 }
-
-.tarjeta-resumen__memory {
-  background-color: #fffbf2;
+.tarjeta-resumen__dato--amarillo {
   color: #ffc24d;
-  width: 249px;
-  height: 56px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 10px;
-  display: inline-block;
-  vertical-align: top;
-  font-weight: bold;
-  align-content: center;
+  background-color: #fffbf2;
 }
+.tarjeta-resumen__dato--verde {
+  color: #2dac8a;
+  background-color: #f2fbfa;
+}
+.tarjeta-resumen__dato--azul {
+  color: #1923a0;
+  background-color: #f3f3fd;
+}
+
+
 .tarjeta-resumen__memory-icon {
   width: 30px;
   height: 30px;
-  /* margin-left: 106px;
-  margin-top: 214px;
-  position: absolute; */
-}
-
-.tarjeta-resumen__verbal {
-  background-color: #f2fbfa;
-  color: #2dac8a;
-  width: 249px;
-  height: 56px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  align-content: center;
-}
-
-.tarjeta-resumen__visual {
-  background-color: #f3f3fd;
-  color: #1923a0;
-  width: 249px;
-  height: 56px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  align-content: center;
 }
 
 .tarjeta-resumen__button {
