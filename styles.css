@@ -13,7 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  min-height: 111vh;
+  max-width: 736px;
+  box-shadow: 10px 10px 5px var(--color-sombreado);
 }
 .tarjeta-resultado {
   background: rgb(102, 69, 250);
@@ -24,9 +25,8 @@ body {
     rgba(53, 47, 235, 1) 100%
   );
   border-radius: 30px;
-  width: 328px;
-  height: 454px;
   text-align: center;
+  flex: 1 1 50%;
 }
 
 .tarjeta-resultado__title {
@@ -73,16 +73,14 @@ body {
 .tarjeta-resumen {
   display: flex;
   flex-direction: column;
-  width: 328px;
-  height: 454px;
   background-color: var(--color-tarjeta-resumen);
   border-radius: 30px;
-  box-shadow: 10px 10px 5px var(--color-sombreado);
+  align-items: center;
+  flex: 1 1 50%;
 }
 
 .tarjeta-resumen__title-summary {
   margin-top: 38px;
-  margin-left: 48px;
   font-size: 26px;
   color: var(--color-letra-summary);
   font-weight: bold;
@@ -95,7 +93,6 @@ body {
   width: 249px;
   height: 56px;
   border-radius: 8px;
-  margin-left: 41px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
@@ -108,7 +105,6 @@ body {
   width: 249px;
   height: 56px;
   border-radius: 8px;
-  margin-left: 41px;
   text-align: center;
   margin-bottom: 10px;
   display: inline-block;
@@ -130,7 +126,6 @@ body {
   width: 249px;
   height: 56px;
   border-radius: 8px;
-  margin-left: 41px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
@@ -143,7 +138,6 @@ body {
   width: 249px;
   height: 56px;
   border-radius: 8px;
-  margin-left: 41px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
@@ -158,7 +152,6 @@ body {
   color: white;
   width: 254px;
   height: 50px;
-  margin-left: 40px;
   margin-top: 12px;
   text-align: center;
   font-size: 21px;
