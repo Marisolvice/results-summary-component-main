@@ -28,12 +28,7 @@ body {
 }
 .tarjeta-resultado {
   background: rgb(102, 69, 250);
-  background: linear-gradient(
-    218deg,
-    rgba(102, 69, 250, 1) 0%,
-    rgba(104, 67, 251, 1) 50%,
-    rgba(53, 47, 235, 1) 100%
-  );
+  background: linear-gradient(#6743ff 0%, #312de6 75%);
   border-radius: 30px;
   text-align: center;
   flex: 1 1 50%;
@@ -50,11 +45,7 @@ body {
   width: 180px;
   height: 180px;
   background: rgb(75, 35, 205);
-  background: linear-gradient(
-    0deg,
-    rgba(75, 36, 205) 0%,
-    rgba(69, 51, 237) 100%
-  );
+  background: linear-gradient(#4B20C7 0%, #3F33EC 100%);
 
   margin-left: 89px;
   color: white;
@@ -84,30 +75,35 @@ body {
 .tarjeta-resumen {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1 1 50%;
-  padding-bottom: 48px;
+  gap: 22px;
+  padding: 48px 40px;
 }
 
 .tarjeta-resumen__title-summary {
-  margin-top: 38px;
   font-size: 26px;
   color: var(--color-letra-summary);
   font-weight: bold;
-  margin-bottom: 36px;
+  margin: 0;
 }
 
 .tarjeta-resumen__dato {
   background-color: #fff6f5;
   color: #df6066;
-  width: 249px;
-  height: 56px;
+  min-width: 249px;
   border-radius: 8px;
-  text-align: center;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
   font-weight: bold;
-  align-content: center;
+  padding: 22px 16px;
 }
+
+.tarteja-resumen__dato__cifra {
+  flex-grow: 1;
+  text-align: right;
+  color: var(--color-letra-summary);
+}
+
 .tarjeta-resumen__dato--amarillo {
   color: #ffc24d;
   background-color: #fffbf2;
@@ -121,7 +117,6 @@ body {
   background-color: #f3f3fd;
 }
 
-
 .tarjeta-resumen__memory-icon {
   width: 30px;
   height: 30px;
@@ -133,9 +128,8 @@ body {
   flex-direction: column;
   border-radius: 28px;
   color: white;
-  width: 254px;
-  height: 50px;
-  margin-top: 12px;
+  min-width: 254px;
+  padding: 18px 0;
   text-align: center;
   font-size: 21px;
   justify-content: center;
