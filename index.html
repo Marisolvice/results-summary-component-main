@@ -26,11 +26,29 @@
 
       <div class="tarjeta-resumen">
         <h2 class="tarjeta-resumen__title-summary">Summary</h2>
-        <p <i class="bi bi-lightning-charge tarjeta-resumen__reaction"></i>  Reaction</p>
-          <img class="tarjeta-resumen__memory-icon" src="E:\frontend\results-summary-component-main\assets\images\memoria.png" alt="memory">
-        <p class="tarjeta-resumen__memory">Memory</p>
-        <p <i class="bi bi-chat-dots tarjeta-resumen__verbal"></i>  Verbal</p>
-        <p <i class="bi bi-eye tarjeta-resumen__visual"></i>  Visual</p>
+        
+        <div class="tarjeta-resumen-reaction">
+        <span><i class="bi bi-lightning-charge tarjeta-resumen__reaction"></i>Reaction 
+        </span>
+        <span style="color:var(--color-letra-summary)">80/100</span>
+        </div>
+
+        <div class="tarjeta-resumen__memory">
+          <img class="tarjeta-resumen__memory-icon" src="E:\frontend\results-summary-component-main\assets\images\memoria.png" alt="Icon-memory">
+
+          <span>Memory</span>
+          <span style="color:var(--color-letra-summary)">92/100</span>
+        </div>
+          
+        <div class="tarjeta-resumen__verbal">
+          <span <i class="bi bi-chat-dots"></i>  Verbal</span>
+           <span style="color:var(--color-letra-summary)">61/100</span>
+        </div>
+        
+        <div class="tarjeta-resumen__visual">
+          <span><i class="bi bi-eye "></i>  Visual</span>
+          <span style="color:var(--color-letra-summary)">72/100</span>
+        </div>
 
         <a class="tarjeta-resumen__button">Continue</a>
       </div>
