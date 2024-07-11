@@ -1,8 +1,10 @@
 :root {
   --color-tarjeta-resultado: #5a3df9;
+  --color-numero-resultado: #bbb1fc;
   --color-tarjeta-resumen: #ffffff;
   --color-sombreado: #f2f4fd;
-  --color-letra-summary: #393d4e;
+  --color-letra-summary: #3a3947;
+  --color-numero-summary: #928e9a;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 
 .tarjeta-resultado__principal {
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   max-width: 736px;
   box-shadow: 10px 10px 5px var(--color-sombreado);
@@ -38,14 +40,14 @@ body {
 .tarjeta-resultado__title {
   margin-top: 42px;
   font-size: 24px;
-  color: white;
+  color: var(--color-numero-resultado);
 }
 .tarjeta-resultado__circulo {
   border-radius: 50%;
   width: 180px;
   height: 180px;
   background: rgb(75, 35, 205);
-  background: linear-gradient(#4B20C7 0%, #3F33EC 100%);
+  background: linear-gradient(#4b20c7 0%, #3f33ec 100%);
 
   margin-left: 89px;
   color: white;
@@ -59,6 +61,7 @@ body {
 .tarjeta-resultado__de100 {
   font-size: 16px;
   margin-top: -81px;
+  color: var(--color-numero-resultado);
 }
 
 .tarjeta-resultado__result {
@@ -69,7 +72,7 @@ body {
 
 .tarjeta-resultado__description {
   font-size: 17px;
-  color: white;
+  color: var(--color-numero-resultado);
   padding: 0 45px;
 }
 .tarjeta-resumen {
@@ -97,13 +100,6 @@ body {
   font-weight: bold;
   padding: 22px 16px;
 }
-
-.tarteja-resumen__dato__cifra {
-  flex-grow: 1;
-  text-align: right;
-  color: var(--color-letra-summary);
-}
-
 .tarjeta-resumen__dato--amarillo {
   color: #ffc24d;
   background-color: #fffbf2;
@@ -116,6 +112,19 @@ body {
   color: #1923a0;
   background-color: #f3f3fd;
 }
+.tarteja-resumen__dato__cifra {
+  flex-grow: 1;
+  text-align: right;
+  color: var(--color-letra-summary);
+  margin-right: 8px;
+}
+.tarjeta-resumen__dato__signo {
+  color: var(--color-numero-summary);
+}
+.tarjeta-resumen__dato__cifra2 {
+  color: var(--color-numero-summary);
+  margin-left: 6px;
+}
 
 .tarjeta-resumen__memory-icon {
   width: 30px;
@@ -123,7 +132,7 @@ body {
 }
 
 .tarjeta-resumen__button {
-  background-color: var(--color-tarjeta-resultado);
+  background-color: #303b59;
   display: flex;
   flex-direction: column;
   border-radius: 28px;
@@ -133,4 +142,9 @@ body {
   text-align: center;
   font-size: 21px;
   justify-content: center;
+  cursor: pointer;
+}
+
+.tarjeta-resumen__button:hover {
+  background-color: var(--color-tarjeta-resultado);
 }
